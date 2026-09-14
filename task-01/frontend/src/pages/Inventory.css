@@ -1,0 +1,450 @@
+.inventory-page {
+  width: 100%;
+  min-height: calc(100vh - 140px);
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.inventory-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.inventory-breadcrumb {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.inventory-page-header h1 {
+  font-size: 28px;
+  color: #172033;
+  margin-bottom: 7px;
+}
+
+.inventory-page-header p {
+  font-size: 13px;
+  color: #7b8799;
+}
+
+
+/* =====================================================
+   REFRESH BUTTON
+===================================================== */
+
+.inventory-refresh-button {
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #334155;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inventory-refresh-button:hover {
+  background: #f8fafc;
+}
+
+.inventory-refresh-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.inventory-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.inventory-stat-card {
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.03);
+}
+
+.inventory-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inventory-stat-icon.purple {
+  background: #eeeaff;
+  color: #6548e8;
+}
+
+.inventory-stat-icon.blue {
+  background: #e8f3ff;
+  color: #2684d9;
+}
+
+.inventory-stat-icon.orange {
+  background: #fff4df;
+  color: #e58a18;
+}
+
+.inventory-stat-icon.red {
+  background: #ffe9e9;
+  color: #e54848;
+}
+
+.inventory-stat-card span {
+  display: block;
+  color: #8a94a6;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.inventory-stat-card strong {
+  display: block;
+  color: #172033;
+  font-size: 22px;
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.inventory-error {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  border-radius: 10px;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.inventory-error button {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: #be123c;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
+
+.inventory-card {
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.03);
+  overflow: hidden;
+}
+
+.inventory-card-header {
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.inventory-card-header h2 {
+  font-size: 17px;
+  color: #172033;
+  margin-bottom: 5px;
+}
+
+.inventory-card-header p {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.inventory-search {
+  width: 260px;
+  height: 40px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  color: #94a3b8;
+}
+
+.inventory-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #334155;
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.inventory-table-wrapper {
+  overflow-x: auto;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table th {
+  text-align: left;
+  background: #fafbfc;
+  color: #7b8799;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  padding: 14px 20px;
+  border-bottom: 1px solid #edf0f5;
+  white-space: nowrap;
+}
+
+.inventory-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #f0f2f6;
+  color: #334155;
+  font-size: 12px;
+}
+
+.inventory-table tbody tr:hover {
+  background: #fafbff;
+}
+
+.inventory-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   PRODUCT
+===================================================== */
+
+.inventory-product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+}
+
+.inventory-product-image {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #f0edff;
+  color: #6c4df6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.inventory-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inventory-product strong {
+  display: block;
+  color: #172033;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.inventory-product span {
+  display: block;
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   CATEGORY
+===================================================== */
+
+.inventory-category {
+  display: inline-block;
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   STOCK
+===================================================== */
+
+.stock-number {
+  font-size: 14px;
+  color: #172033;
+}
+
+.stock-low {
+  color: #d97706;
+}
+
+.stock-zero {
+  color: #dc2626;
+}
+
+.reserved-number {
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.inventory-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 9px;
+  border-radius: 7px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.inventory-status-good {
+  background: #ecfdf3;
+  color: #15803d;
+}
+
+.inventory-status-low {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.inventory-status-out {
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+
+/* =====================================================
+   EMPTY / LOADING
+===================================================== */
+
+.inventory-empty,
+.inventory-loading {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  gap: 10px;
+}
+
+.inventory-empty h3 {
+  color: #334155;
+  font-size: 16px;
+}
+
+.inventory-empty p,
+.inventory-loading p {
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   SPINNER
+===================================================== */
+
+.inventory-spinner {
+  animation: inventory-spin 1s linear infinite;
+}
+
+@keyframes inventory-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .inventory-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .inventory-page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .inventory-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .inventory-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .inventory-search {
+    width: 100%;
+  }
+
+}

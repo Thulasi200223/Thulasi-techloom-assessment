@@ -1,0 +1,71 @@
+/* OVERLAY */
+.side-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 999;
+  display: none;
+}
+
+.side-menu-overlay.show {
+  display: block;
+}
+
+/* PANEL */
+.side-menu-panel {
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  animation: slideIn 0.3s ease forwards;
+}
+
+/* HEADER */
+.side-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #4f46e5, #ec4899);
+}
+
+.side-menu-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* LIST */
+.side-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu-list li {
+  padding: 14px 18px;
+  font-size: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.side-menu-list li:hover {
+  background: #f3f4f6;
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

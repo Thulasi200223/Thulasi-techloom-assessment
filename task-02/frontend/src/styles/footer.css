@@ -1,0 +1,141 @@
+/* ================= FOOTER BASE ================= */
+.footer {
+  background: linear-gradient(180deg, #f8fafc, #ffffff);
+  margin-top: 40px;
+  padding: 40px 20px 10px;
+}
+
+/* ================= TOP PREMIUM COLOR BAR ================= */
+.footer-top-bar {
+  background: linear-gradient(
+    135deg,
+    #f3e8ff,   /* light purple */
+    #fde2f3,   /* soft pink */
+    #fff4cc,   /* gold */
+    #ffffff    /* white */
+  );
+
+  color: #4b006e;
+  padding: 22px 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 2px solid rgba(168, 85, 247, 0.35);
+  box-shadow:
+    0 12px 30px rgba(168, 85, 247, 0.25),
+    0 6px 18px rgba(255, 182, 193, 0.25);
+}
+
+/* TOP BAR TITLE */
+.footer-top-bar h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  color: #7c3aed;
+}
+
+/* TOP BAR TAGLINE */
+.footer-top-bar span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* ================= FOOTER CONTENT ================= */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* ================= FOOTER BOXES ================= */
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #fdf4ff,
+    #fff7ed,
+    #fefce8
+  );
+
+  border: 2px solid rgba(147, 51, 234, 0.25);
+  border-radius: 16px;
+  padding: 20px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.footer-col:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(147, 51, 234, 0.18);
+}
+
+/* ================= TEXT ================= */
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 10px;
+  color: #7c3aed;
+}
+
+.footer-col p {
+  color: #374151;
+}
+
+/* ================= LINKS ================= */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #374151;
+}
+
+.footer-col ul li:hover {
+  color: #f59e0b;
+}
+
+/* ================= INPUT ================= */
+.footer-col input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1.5px solid #e5e7eb;
+}
+
+/* ================= BUTTON ================= */
+.footer-col button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  color: #1f2937;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-col button:hover {
+  background: linear-gradient(135deg, #fde047, #fbbf24);
+}
+
+/* ================= FOOTER BOTTOM ================= */
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #6b7280;
+}

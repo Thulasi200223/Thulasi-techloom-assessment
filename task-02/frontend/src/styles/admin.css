@@ -1,0 +1,52 @@
+.admin-container {
+  padding: 30px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.orders-table th {
+  background: #f4f4f4;
+}
+
+.orders-table select {
+  padding: 5px;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status.pending {
+  background: orange;
+  color: white;
+}
+
+.status.processing {
+  background: blue;
+  color: white;
+}
+
+.status.delivered {
+  background: green;
+  color: white;
+}
+
+.status.cancelled {
+  background: red;
+  color: white;
+}

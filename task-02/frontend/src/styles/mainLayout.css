@@ -1,0 +1,30 @@
+.main-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* ================= SIDEBAR ================= */
+.layout-sidebar {
+  width: 260px;              /* 🔥 FIXED WIDTH */
+  flex-shrink: 0;
+  padding: 20px;
+}
+
+/* ================= CONTENT ================= */
+.layout-content {
+  flex: 1;                   /* 🔥 TAKE REMAINING SPACE */
+  padding: 20px 30px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .layout-sidebar {
+    display: none;
+  }
+
+  .layout-content {
+    padding: 15px;
+  }
+}

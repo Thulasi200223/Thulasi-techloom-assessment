@@ -1,0 +1,44 @@
+/* =========================================
+   ORDERS / CHECKOUT FORM VISIBILITY FIX
+========================================= */
+
+.product-modal input,
+.product-modal textarea,
+.product-modal select {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border: 1px solid #d1d5db !important;
+  -webkit-text-fill-color: #111827 !important;
+}
+
+.product-modal input::placeholder,
+.product-modal textarea::placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+.product-modal select option {
+  background: #ffffff !important;
+  color: #111827 !important;
+}
+
+.product-modal input:focus,
+.product-modal textarea:focus,
+.product-modal select:focus {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-color: #4f46e5 !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+.product-modal label {
+  color: #374151 !important;
+}
+
+.product-modal span,
+.product-modal p,
+.product-modal h3,
+.product-modal h4 {
+  color: #1f2937;
+}

@@ -1,0 +1,36 @@
+/* Layout wrapper */
+.layout {
+  display: flex;
+  margin-top: 80px; /* navbar height */
+}
+
+/* FIXED side menu (Products page) */
+.side-menu-fixed {
+  width: 260px;
+  min-height: 100vh;
+  background: #f7f7f7;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.side-menu-fixed ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu-fixed li {
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.side-menu-fixed li:hover {
+  background: #eaeaea;
+  border-radius: 6px;
+}
+
+/* Page content */
+.page-content {
+  flex: 1;
+  padding: 20px;
+}

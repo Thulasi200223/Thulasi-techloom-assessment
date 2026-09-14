@@ -1,0 +1,51 @@
+.brand-section {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.brand-section h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.brand-item {
+  cursor: pointer;
+}
+
+.brand-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.brand-circle img {
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.brand-item p {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.brand-item:hover .brand-circle {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}

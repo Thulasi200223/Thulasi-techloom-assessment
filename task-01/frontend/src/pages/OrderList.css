@@ -1,0 +1,470 @@
+.order-list-page {
+  width: 100%;
+  min-height: calc(100vh - 140px);
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.order-list-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.order-list-breadcrumb {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.order-list-header h1 {
+  font-size: 28px;
+  color: #172033;
+  margin-bottom: 7px;
+}
+
+.order-list-header p {
+  color: #7b8799;
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   REFRESH
+===================================================== */
+
+.order-refresh-button {
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.order-refresh-button:hover {
+  background: #f8fafc;
+}
+
+.order-refresh-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.order-error {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #be123c;
+  border-radius: 10px;
+  padding: 13px 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.order-error button {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: #be123c;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.order-toolbar {
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 14px;
+  padding: 15px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.order-search {
+  flex: 1;
+  height: 40px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  color: #94a3b8;
+}
+
+.order-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+  color: #334155;
+}
+
+.order-filter {
+  height: 40px;
+  min-width: 160px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  padding: 0 12px;
+  background: white;
+  color: #334155;
+  font-size: 12px;
+  outline: none;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.order-list-card {
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.03);
+}
+
+.order-list-card-header {
+  padding: 21px 23px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.order-list-card-header h2 {
+  color: #172033;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.order-list-card-header p {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.order-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th {
+  background: #fafbfc;
+  color: #7b8799;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: left;
+  padding: 14px 18px;
+  border-bottom: 1px solid #edf0f5;
+  white-space: nowrap;
+}
+
+.order-table td {
+  padding: 15px 18px;
+  border-bottom: 1px solid #f0f2f6;
+  font-size: 12px;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.order-table tbody tr:hover {
+  background: #fafbff;
+}
+
+.order-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   ORDER ID
+===================================================== */
+
+.order-id strong {
+  display: block;
+  color: #172033;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.order-id span {
+  font-size: 9px;
+  color: #94a3b8;
+}
+
+
+/* =====================================================
+   CUSTOMER
+===================================================== */
+
+.order-customer strong {
+  display: block;
+  color: #172033;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.order-customer span {
+  display: block;
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   ITEMS
+===================================================== */
+
+.order-item-count {
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   TOTAL
+===================================================== */
+
+.order-total {
+  color: #172033;
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   PAYMENT
+===================================================== */
+
+.order-payment strong {
+  display: block;
+  color: #334155;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.order-payment span {
+  color: #94a3b8;
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.order-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 7px;
+  padding: 6px 9px;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.order-status-completed {
+  background: #ecfdf3;
+  color: #15803d;
+}
+
+.order-status-paid {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.order-status-processing {
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+
+.order-status-reserved {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.order-status-pending {
+  background: #f8fafc;
+  color: #64748b;
+}
+
+.order-status-cancelled {
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+.order-status-failed {
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+.order-status-expired {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.order-status-default {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.order-date {
+  color: #64748b;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.order-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.order-actions button {
+  width: 31px;
+  height: 31px;
+  border-radius: 7px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.order-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.order-actions button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.order-action-complete {
+  color: #16a34a;
+}
+
+.order-action-cancel {
+  color: #dc2626;
+}
+
+.order-action-refund {
+  color: #7c3aed;
+}
+
+
+/* =====================================================
+   EMPTY / LOADING
+===================================================== */
+
+.order-list-empty,
+.order-list-loading {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  gap: 10px;
+}
+
+.order-list-empty h3 {
+  color: #334155;
+  font-size: 16px;
+}
+
+.order-list-empty p,
+.order-list-loading p {
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   SPINNER
+===================================================== */
+
+.order-spin {
+  animation: order-spin 1s linear infinite;
+}
+
+@keyframes order-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .order-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-toolbar {
+    flex-direction: column;
+  }
+
+  .order-filter {
+    width: 100%;
+  }
+
+}
