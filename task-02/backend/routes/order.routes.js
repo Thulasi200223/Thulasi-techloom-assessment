@@ -1,23 +1,41 @@
 const express = require("express");
 const router = express.Router();
-const Order = require("../models/Order");
 
-// ✅ SAVE ORDER
-router.post("/", async (req, res) => {
-  try {
-    const { items, totalAmount, paymentMethod } = req.body;
+const {
+  createOrder,
+  processPayment,
+  getOrders,
+  getOrderById,
+  getOrderHistory,
+  updateOrderStatus,
+  cancelOrder,
+  refundOrder,
+} = require("../controllers/order.controller");
 
-    const newOrder = new Order({
-      items,
-      totalAmount,
-      paymentMethod
-    });
+// Create order + reserve stock
+router.post("/", createOrder);
 
-    const savedOrder = await newOrder.save();
-    res.status(201).json(savedOrder);
-  } catch (err) {
-    res.status(500).json({ message: "Order save failed" });
-  }
-});
+// Mock payment
+router.post("/:id/payment", processPayment);
+
+// Get all orders
+router.get("/", getOrders);
+
+// Get order history by email
+router.get("/history/:email", getOrderHistory);
+
+// Get single order
+router.get("/:id", getOrderById);
+
+// Update order status
+router.put("/:id/status", updateOrderStatus);
+
+// Cancel order
+router.post("/:id/cancel", cancelOrder);
+router.put("/:id/cancel", cancelOrder);
+
+// Refund order
+router.post("/:id/refund", refundOrder);
+router.put("/:id/refund", refundOrder);
 
 module.exports = router;
