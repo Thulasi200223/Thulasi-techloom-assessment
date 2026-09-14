@@ -39,7 +39,7 @@ function Products() {
       setError("");
 
       const response = await axios.get(
-        "http://localhost:5001/api/products"
+        "https://thulasi-techloom-assessment-zmzi.vercel.app/api/products"
       );
 
       const productData = response.data.products || [];
@@ -195,7 +195,7 @@ function Products() {
       if (editingProduct) {
 
         await axios.put(
-          `http://localhost:5001/api/products/${editingProduct._id}`,
+          `https://thulasi-techloom-assessment-zmzi.vercel.app/api/products/${editingProduct._id}`,
           productData
         );
 
@@ -206,7 +206,7 @@ function Products() {
       else {
 
         await axios.post(
-          "http://localhost:5001/api/products",
+          "https://thulasi-techloom-assessment-zmzi.vercel.app/api/products",
           productData
         );
 
@@ -246,7 +246,7 @@ function Products() {
     try {
 
       await axios.delete(
-        `http://localhost:5001/api/products/${id}`
+        `https://thulasi-techloom-assessment-zmzi.vercel.app/api/products/${id}`
       );
 
       fetchProducts();

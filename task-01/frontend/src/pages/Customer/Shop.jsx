@@ -20,7 +20,7 @@ function Shop() {
       setError("");
 
       const response = await fetch(
-        "http://localhost:5001/api/products"
+        "https://thulasi-techloom-assessment-zmzi.vercel.app/api/products"
       );
 
       const data = await response.json();
@@ -382,7 +382,7 @@ function Shop() {
     product.image
       ? product.image.startsWith("http")
         ? product.image
-        : `http://localhost:5001/${product.image}`
+        : `https://thulasi-techloom-assessment-zmzi.vercel.app/${product.image}`
       : ""
   }
   alt={product.name}

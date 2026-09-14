@@ -286,7 +286,7 @@ function Orders() {
         await fetch(
           `${
             import.meta.env.VITE_API_URL ||
-            "http://localhost:5001/api"
+            "https://thulasi-techloom-assessment-zmzi.vercel.app/api"
           }/orders/${orderId}/status`,
           {
             method: "PUT",
@@ -355,7 +355,7 @@ function Orders() {
         await fetch(
           `${
             import.meta.env.VITE_API_URL ||
-            "http://localhost:5001/api"
+            "https://thulasi-techloom-assessment-zmzi.vercel.app/api"
           }/orders/${orderId}/cancel`,
           {
             method: "POST",
@@ -427,7 +427,7 @@ function Orders() {
         await fetch(
           `${
             import.meta.env.VITE_API_URL ||
-            "http://localhost:5001/api"
+            "https://thulasi-techloom-assessment-zmzi.vercel.app/api"
           }/orders/${orderId}/refund`,
           {
             method: "POST",

@@ -267,7 +267,7 @@ function Checkout() {
 
       const response = await fetch(
 
-        "http://localhost:5001/api/orders",
+        "https://thulasi-techloom-assessment-zmzi.vercel.app/api/orders",
 
         {
 
