@@ -23,8 +23,8 @@ function Dashboard() {
 
       const [productsResponse, ordersResponse] =
         await Promise.all([
-          axios.get("http://localhost:5001/api/products"),
-          axios.get("http://localhost:5001/api/orders"),
+          axios.get("https://thulasi-techloom-assessment-zmzi.vercel.app/api/products"),
+axios.get("https://thulasi-techloom-assessment-zmzi.vercel.app/api/orders"),
         ]);
 
       setProducts(productsResponse.data.products || []);
